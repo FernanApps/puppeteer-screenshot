@@ -42,8 +42,6 @@ module.exports = async function (req, res) {
 
         res.statusCode = 500;
         res.setHeader('Content-Type', 'text/html');
-        res.end(error.message);
-
         res.end('<h1>Server Error</h1><p>Sorry, there was a problem</p>');
         console.error(e.message);
     }
